@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">
+      <img src="mount-white.png" alt="Mount Everest Logo" />
+      <h1>E-Learrning</h1>
+    </div>
+    <nav id="navMenu" class="nav-links">
+      <a href="my_vscode.html">Home</a>
+      <a href="course.html">Courses</a>
+      <!--<li class="dropdown">
+          <ul class="dropdown-content">
+            <li><a href="payment.html">Web Development</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </li>-->
+      <a href="#">About</a>
+      <a href="login.html">LogIn</a>
+      <a href="#" class="act">Apply</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Sign-Up Form -->
+  <div class="form-container">
+    <h2>Applicant</h2>
+    <form id="signUpForm">
+      <!-- Basic applicant info -->
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required />
+
+      <label for="sog">State Of Origin:</label>
+      <input type="text" id="sog" name="sog" required />
+
+      <label for="lga">L.G.A:</label>
+      <input type="text" id="lga" name="lga" required />
+
+      <label for="ntion">Nationality:</label>
+      <input type="text" id="ntion" name="ntion" required />
+
+      <label for="nin">NIN Method:</label>
+      <select id="nin" name="nin" required>
+        <option value="">Select</option>
+        <option>Personal</option>
+        <option>Guardiance/Sponsor</option>
+      </select>
+
+      <!--<label for="ntion">NIN:</label>-->
+      <input type="text" id="Nin" name="nin" placeholder="Enter NIN of above selection" required />
+      <input type="text" id="bankName" name="bank" placeholder="Enter Bank Name" required />
+      <input type="text" id="accountNum" name="account" placeholder="Enter Account Number" required />
+
+      <input type="text" id="Nins" name="nin" placeholder="Enter NIN of above selection" required />
+      <input type="text" id="bankNames" name="bank" placeholder="Enter Bank Name of Guardiance/Sponsor" required />
+      <input type="text" id="accountNums" name="account" placeholder="Enter Account Number of Guardiance/Sponsor" required />
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+
+      <select id="drop">
+        <option class="dropdown-content">Select Courses</option>
+        <option class="dropdown-content">Wealth Education</option>
+        <option class="dropdown-content">Leardership Education</option>
+        <option class="dropdown-content">Wealth & Leardership Education</option>
+      </select>
+
+      <label for="photo">Upload ID:</label>
+      <input type="file" id="photo" name="photo" accept="image/*,.pdf" required />
+
+      <label for="password">Password:</label>
+<div class="password-container">
+  <input type="text" id="password" name="password" required />
+  <span class="toggle-password" onclick="toggleVisibility('password')">&#128065;</span>
+</div>
+<p id="strengthMessage"></p>
+
+<label for="confirmPassword">Confirm Password:</label>
+<div class="password-container">
+  <input type="text" id="confirmPassword" name="confirmPassword" required />
+  <span class="toggle-password" onclick="toggleVisibility('confirmPassword')">&#128065;</span>
+</div>
+  <label for="rid">Referrer ID: (if none enter this, TFOWAL1)</label>
+      <input type="text" id="rid" name="rid" required />
+
+      <label for="apply_fee">Application fee: (get 50% off with Referrer ID)</label>
+      <input type="" id="apply_fee" placeholder="₦ 5000 Referrer ID ₦ 2500" readonly/>
+
+<p id="passwordMessage"></p>
+
+
+      <button type="submit">Countinue</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

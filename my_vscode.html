@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Learrning</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+  <!-- Header with logo and nav -->
+  <header>
+    <div class="logo">
+      <img src="mount-white.png" alt="Mount Everest Logo" />
+      <h1>E-Learrning</h1>
+    </div>
+    <nav id="navMenu" class="nav-links">
+      <a href="#" class="act">Home</a>
+      <a href="course.html">Courses</a>
+      <!--<li class="dropdown">
+          <ul class="dropdown-content">
+            <li><a href="payment.html">Web Development</a></li>
+            <li><a href="#">Data Science</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </li>-->
+      <a href="#overview">About</a>
+      <a href="login.html">LogIn</a>
+      <a href="sign-up.html">Appy</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Hero section -->
+  <main>
+    <img src="e-learning-imagge.jpg" class="bg-image">
+    <section class="hero1">
+      <!--<h2 class="Welcome">Welcome to E-Learrning</h2>
+      <p>Explore courses and grow your skills!</p>-->
+    </section>
+  </main>
+    <!--{ box-sizing: border-box; margin: 0; padding: 0; }
+
+  <div class="slider" id="slider">
+    <div class="slide active">
+      <img src="https://picsum.photos/id/1015/800/400" alt="Nature">
+      <div class="text">Beautiful Mountain View</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/id/1025/800/400" alt="Dog">
+      <div class="text">Friendly Dog in the Park</div>
+    </div>
+    <div class="slide">
+      <img src="https://picsum.photos/id/1035/800/400" alt="Beach">
+      <div class="text">Relaxing Beach Sunset</div>
+    </div>
+
+     Navigation arrows 
+    <div class="prev">&#10094;</div>
+    <div class="next">&#10095;</div>
+
+     Dots indicators 
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+
+  <script>
+    let slides = document.querySelectorAll(".slide");
+    let dots = document.querySelectorAll(".dot");
+    let index = 0;
+    let timer = setInterval(nextSlide, 3000);
+
+    function showSlide(i) {
+      slides.forEach((slide, idx) => {
+        slide.classList.remove("active");
+        dots[idx].classList.remove("active");
+        if (idx === i) {
+          slide.classList.add("active");
+          dots[idx].classList.add("active");
+        }
+      });
+      index = i;
+    }
+
+    function nextSlide() {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    }
+
+    function prevSlide() {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    }
+
+    document.querySelector(".next").addEventListener("click", () => {
+      nextSlide();
+      resetTimer();
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      prevSlide();
+      resetTimer();
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        showSlide(i);
+        resetTimer();
+      });
+    });
+
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(nextSlide, 3000);
+    }
+
+    // Swipe gesture support
+    let slider = document.getElementById("slider");
+    let startX = 0;
+    let endX = 0;
+
+    slider.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchend", (e) => {
+      endX = e.changedTouches[0].clientX;
+      handleSwipe();
+    });
+
+    function handleSwipe() {
+      let diff = startX - endX;
+      if (Math.abs(diff) > 50) { // threshold
+        if (diff > 0) {
+          nextSlide(); // swipe left → next
+        } else {
+          prevSlide(); // swipe right → previous
+        }
+        resetTimer();
+      }
+    }
+  </script>-->
+
+  <!-- Footer -->
+   <div class="home-btn">
+    <button class="first-btn"><a href="sign-up.html">Get Started</a></button>
+    <button class="second-btn"><a href="login.html">Sign In</a></button>
+   </div>
+   <div id="overview">
+    <p class="hed" id="change">OUR VISION</p>
+    <p class="para" id="anime">To produce financially independent and self-sufficient leaders and entrepreneurs who will inspire others and positively influence their generation as a whole. </p>
+    <p class="hed"></p>
+    <p class="para"></p>
+
+    <p class="hed" id="change">OUR MISSION</p>
+    <p class="para" id="anime">To raise one million financially independent people who will raise others so that together we can have a positive impact on the world. </p>
+
+    <p class="hed">OVERVIEW</p>
+    <p class="para">This school was founded out of a desire to see young people discover their purpose early on, have a clear vision, and thus become successful and wealthy leaders in life. 
+      The majority of circular schools in Africa and other continents today do not teach financial education or how to create wealth, which is why most countries have so many broke professors. 
+      Many professionals at the pinnacle of their careers continue to struggle financially. It is very pathetic that many people who have dedicated their entire lives to serving their country end up as poor retirees who rely on the government for survival. The reason is not far-fetched. The majority of higher education institutions in Africa and the rest of the world concentrate on teaching the millions of undergraduates who graduate each year with certificates but are unable to work on their own. 
+      The majority of these graduates use their strong credentials to search for employment, but sadly, only a small number of those with connections are able to secure the few good jobs that are available. 
+      Many people's jobs are compared to slavery because of the ridiculously low pay. People become dissatisfied and settle for less in the hopes that things will improve eventually. Unfortunately, the economy is unfriendly to all. 
+      The harsh economy has an adverse effect on both young and old. </p>
+
+    <p class="hed">WHAT WILL ESWAL HELP YOU TO ACHIEVE?</p>
+    <p class="para">Can you imagine your annual income becoming your monthly earnings? Your monthly earnings become your weekly earnings, which then become your daily earnings? 
+                    This is achievable at ESWAL. 
+    </p>
+
+    <ul class="list-title">After the two-year course, you’ll;
+      <li class="list-item">Become an amazing leader with clarity of vision and purpose.</li>
+      <li class="list-item">Not go around looking for employment, rather you’ll own your own business which you’ll launched with 95% financial support from the school system.</li>
+      <li class="list-item">Learn and be guided to grow your business beyond your imagination.</li>
+      <li class="list-item">Be able to train other successful business leaders.</li>
+      <li class="list-item">Within two to four years after graduation become millionaire Creator, if you strictly follow and apply what you’re taught by the school system.</li>
+      <li class="list-item">If you pay close attention to what you're taught, you can achieve financial freedom in five to ten years.</li>
+    </ul>
+
+    <p class="hed">THE PERSONAL QUALITIES OF INDIVIDUALS NEEDED IN THE SCHOOL</p>
+    <p class="para">1.	Individuals with a strong desire to positively impact and affect their world.<br>
+                    2.	Individuals who are teachable and eager to learn and grow.<br> 
+                    3.	Those who are selfless, always ready and willing to assist others in becoming successful. 
+    </p>
+    <p class="hed">THE ADMISSION REQUIRMENTS</p>
+    <p class="para">1.	Students must have a good Android phone and/or PC to access the school website, webinars, and learning materials.<br>
+                    2.	Students should be able to read and write in the English language fluently and must be computer literate.<br>
+                    3.	In addition to having completed senior secondary school, students must have earned at least five credits in five different subjects, including English and mathematics.<br>
+                    4.	 Students must have a bank account<br> 
+                    5.	Students must have NIN (National Identification Number) 
+    </p>
+    <p class="hed">HOW YOU CAN EARN IN ESWAL</p>
+    <li class="list-item">ESWAL is designed for students to learn and earn simultaneously.</li>
+    <p class="para">Students can earn by:<br>
+                    1. Completing weekly activities, assignments and tests.<br>
+                    2. Completing semester's exams and projects.
+    </p>
+  </div>
+  <footer class="foot1">
+    <p>&copy; 2025 E-Learrning. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
